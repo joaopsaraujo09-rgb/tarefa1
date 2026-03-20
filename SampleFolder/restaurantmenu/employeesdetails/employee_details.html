@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Gestão de Funcionários</title>
+</head>
+<body>
+
+<h1>Sistema de Gestão de Funcionários</h1>
+
+<div>
+    <button onclick="displayEmployees()">Exibir Funcionários</button>
+    <button onclick="calculateTotalSalaries()">Calcular Salários Totais</button>
+    <button onclick="displayHREmployees()">Exibir Funcionários de RH</button>
+    <button onclick="findEmployeeById(2)">Encontrar Funcionário pelo ID 2</button>
+    <button onclick="findEmployeeByEspecializacao('javascript')">
+        Encontrar Funcionário pela Especialização javascript
+    </button>
+</div>
+
+<hr>
+
+<h2>Adicionar Funcionário</h2>
+
+<input type="text" id="name" placeholder="Nome"><br><br>
+<input type="number" id="age" placeholder="Idade"><br><br>
+<input type="text" id="department" placeholder="Departamento"><br><br>
+<input type="number" id="salary" placeholder="Salário"><br><br>
+<input type="text" id="especializacao" placeholder="Especialização"><br><br>
+
+<button onclick="addEmployee()">Adicionar Funcionário</button>
+
+<hr>
+
+<div id="employeesDetails"></div>
+
+<script src="employee_details.js"></script>
+
+</body>
+</html>
